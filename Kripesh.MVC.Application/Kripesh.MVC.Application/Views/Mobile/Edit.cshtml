@@ -1,0 +1,29 @@
+﻿@model Kripesh.MVC.Application.Models.Mobile
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m=> m.Name)
+        @Html.TextAreaFor(m=> m.Name , new { @class="form-control" , @id="mobile_name"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m=> m.Price)
+        @Html.TextAreaFor(m=> m.Price, new { @class="form-control" , @id="mobile_price"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m=> m.Processor)
+        @Html.TextAreaFor(m=> m.Processor, new { @class="form-control" , @id="mobile_processor"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m=> m.ScreenSize)
+        @Html.TextAreaFor(m=> m.ScreenSize , new { @class="form-control", @id="mobile_screen_size"})
+    </div>
+    <div class="checkbox">
+        @Html.LabelFor(m=> m.Available)
+        @Html.CheckBoxFor(m=> m.Available)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Cancel</button>
+
+}

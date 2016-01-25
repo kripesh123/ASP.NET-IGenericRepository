@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Kripesh.MVC.Application.Models.Mobile> 
+
+<h2>@ViewBag.Title</h2>
+
+<ul>
+    @foreach(var m in Model)
+    {
+        <li class="thumbnail">
+            Id:@m.Id<br/>
+            Name:<a href="~/Mobile/Edit/@m.Id">@m.Name</a><br />
+            Price:@m.Price<br />
+            Processor:@m.Processor<br />
+            ScreenSiza:@m.ScreenSize<br />
+            Available:@m.Available<br />
+
+        </li>
+    }
+</ul>

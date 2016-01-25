@@ -1,0 +1,29 @@
+﻿@model Kripesh.MVC.Application.Models.Store
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m=> m.Name)
+        @Html.TextAreaFor(m=> m.Name , new { @class="form-control",@id="store_name"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Location)
+        @Html.TextAreaFor(m => m.Location, new { @class = "form-control", @id = "store_location" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Capacity)
+        @Html.TextAreaFor(m => m.Capacity, new { @class = "form-control", @id = "store_capacity" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Employee)
+        @Html.TextAreaFor(m => m.Employee, new { @class = "form-control", @id = "store_employee" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Status)
+        @Html.CheckBoxFor(m=> m.Status)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Update</button>
+
+}

@@ -1,0 +1,20 @@
+﻿@model Kripesh.MVC.Application.Models.User
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(u => u.Username)
+        @Html.TextAreaFor(u => u.Username, new { @class = "from-control", @id = "user_username" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(u => u.Password)
+        @Html.TextAreaFor(u => u.Password, new { @class = "from-control", @id = "user_password" })
+    </div>
+    <div class="checkbox">
+        @Html.LabelFor(u => u.Status)
+        @Html.CheckBoxFor(u => u.Status)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Cancel</button> 
+}

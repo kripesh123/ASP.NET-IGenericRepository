@@ -1,0 +1,31 @@
+﻿
+@model Kripesh.MVC.Application.Models.Student
+
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m=> m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @id = "student_firstname" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @id = "student_lastname" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "student_email" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ContactNo)
+        @Html.TextBoxFor(m => m.ContactNo, new { @class = "form-control", @id = "student_contact" })
+    </div>
+    <div class="checkbox">
+        @Html.LabelFor(m => m.Status)
+        @Html.CheckBoxFor(m => m.Status)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Cancel</button>
+
+}

@@ -1,0 +1,38 @@
+﻿
+@model Kripesh.MVC.Application.Models.Teacher
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m=> m.FirstName)
+        @Html.TextBoxFor(m=> m.FirstName , new { @class="form-control", @id="teacher_firstname"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @id = "teacher_lastname" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "teacher_email" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Address)
+        @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @id = "teacher_address" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Salary)
+        @Html.TextBoxFor(m => m.Salary, new { @class = "form-control", @id = "teacher_salary" })
+    </div>
+    <div class="checkbox">
+        @Html.LabelFor(m => m.Status)
+        @Html.CheckBoxFor(m => m.Status)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Cancel</button>
+}
+

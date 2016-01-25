@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<Kripesh.MVC.Application.Models.Auto>
+<h2>@ViewBag.Title</h2>
+
+<ul>
+
+    @foreach(var a in Model)
+    {
+        <li class="thumbnail"> 
+            Id:@a.Id<br />
+            Name:<a href="~/Auto/Edit/@a.Id">@a.AutoName</a><br />
+            Model:@a.ModelNumber<br />
+            Price:@a.Price<br />
+            Status:@a.Status<br />
+        </li>
+    }
+</ul>

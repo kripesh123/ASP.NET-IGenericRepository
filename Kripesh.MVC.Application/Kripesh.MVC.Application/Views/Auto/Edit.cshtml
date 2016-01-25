@@ -1,0 +1,24 @@
+﻿@model Kripesh.MVC.Application.Models.Auto
+
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m=> m.AutoName)
+        @Html.TextAreaFor(m=> m.AutoName, new { @class="form-control" , @id="auto_name"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ModelNumber)
+        @Html.TextAreaFor(m => m.ModelNumber, new { @class = "form-control", @id = "auto_model_number" })
+    </div>    <div class="form-group">
+        @Html.LabelFor(m => m.Price)
+        @Html.TextAreaFor(m => m.Price, new { @class = "form-control", @id = "auto_price" })
+    </div>    <div class="form-group">
+        @Html.LabelFor(m => m.Status)
+        @Html.CheckBoxFor(m=> m.Status)
+    </div>
+    <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-saved"></span>Update</button>
+    <button type="submit" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-backward"></span>Cancel</button>
+
+}

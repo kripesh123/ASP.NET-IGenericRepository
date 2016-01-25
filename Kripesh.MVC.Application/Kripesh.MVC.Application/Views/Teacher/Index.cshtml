@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Kripesh.MVC.Application.Models.Teacher>
+
+<h1>@ViewBag.Title</h1>
+
+<ul>
+    @foreach(var t in Model)
+    {
+        <li class="thumbnail">
+            Id:@t.Id<br/>
+            Name:<a href="~/Teacher/Edit/@t.Id">@t.FirstName @t.LastName</a><br/>
+            Email:<a href="#">@t.Email</a><br/>
+            Address:@t.Address<br/>
+            Salary:@t.Salary<br/>
+            Status:@t.Status<br/>
+        </li>
+    }
+</ul>

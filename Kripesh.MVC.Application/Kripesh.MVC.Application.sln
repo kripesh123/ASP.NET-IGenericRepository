@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kripesh.MVC.Application", "Kripesh.MVC.Application\Kripesh.MVC.Application.csproj", "{1D8FBA40-F99C-4833-9B10-C77F8A08ECF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kripesh.MVC.Application.Tests", "Kripesh.MVC.Application.Tests\Kripesh.MVC.Application.Tests.csproj", "{D4C2F6F3-625E-43EF-8A12-E913C6229AC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D8FBA40-F99C-4833-9B10-C77F8A08ECF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8FBA40-F99C-4833-9B10-C77F8A08ECF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8FBA40-F99C-4833-9B10-C77F8A08ECF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8FBA40-F99C-4833-9B10-C77F8A08ECF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C2F6F3-625E-43EF-8A12-E913C6229AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C2F6F3-625E-43EF-8A12-E913C6229AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C2F6F3-625E-43EF-8A12-E913C6229AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C2F6F3-625E-43EF-8A12-E913C6229AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

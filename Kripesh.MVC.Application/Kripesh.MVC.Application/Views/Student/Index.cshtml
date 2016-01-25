@@ -1,0 +1,32 @@
+﻿
+@model IEnumerable<Kripesh.MVC.Application.Models.Student>
+
+<h2>@ViewBag.Title</h2>
+<h3>Student Management System</h3>
+
+<ul>
+  @*
+      @foreach(Student s in ViewBag.Students)
+    {
+       <li class="thumbnail">
+           Id: @s.Id<br/>
+           Name:<a href="~/Student/Edit/@s.Id">@s.FirstName @s.LastName</a><br />
+           Email:<a href="#">@s.Email</a><br />
+           Contact:@s.ContactNo<br />
+           Status:@s.Status<br />
+       </li>
+    }
+*@
+
+    @foreach (var s in Model)
+    {
+        <li class="thumbnail">
+            Id: @s.Id<br />
+            Name:<a href="~/Student/Edit/@s.Id">@s.FirstName @s.LastName</a><br />
+            Email:<a href="#">@s.Email</a><br />
+            Contact:@s.ContactNo<br />
+            Status:@s.Status<br />
+        </li>
+    }
+</ul>
+
